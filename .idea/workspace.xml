@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc22fc63-f1a5-481b-b163-3c8e56e8ff58" name="Changes" comment="Обновление после создания readme" />
+    <list default="true" id="dc22fc63-f1a5-481b-b163-3c8e56e8ff58" name="Changes" comment="Обновление после переименрования ветки master в main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +30,16 @@
   "selectedUrlAndAccountId": {
     "url": "https://github.com/gross2000/Banking_Project.git",
     "accountId": "e81d7736-57da-437a-af2b-aa3caa8d7b39"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "gross2000",
+    "repository": "Banking_Project"
   }
 }]]></component>
   <component name="ProjectColorInfo">{
@@ -41,8 +53,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "develop"
+    "git-widget-placeholder": "#2 on develop"
   }
 }]]></component>
   <component name="RunManager">
@@ -93,11 +106,29 @@
       <option name="project" value="LOCAL" />
       <updated>1718197795204</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Обновление после создания ветки develop">
+      <option name="closed" value="true" />
+      <created>1718198020413</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718198020413</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Обновление после переименрования ветки master в main">
+      <option name="closed" value="true" />
+      <created>1718198756442</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718198756442</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Обновление после создания readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновление после создания readme" />
+    <MESSAGE value="Обновление после создания ветки develop" />
+    <MESSAGE value="Обновление после переименрования ветки master в main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновление после переименрования ветки master в main" />
   </component>
 </project>
