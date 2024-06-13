@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc22fc63-f1a5-481b-b163-3c8e56e8ff58" name="Changes" comment="Добавлена def load_operations()">
+    <list default="true" id="dc22fc63-f1a5-481b-b163-3c8e56e8ff58" name="Changes" comment="Добавлена функция сортировки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/code.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +61,9 @@
     &quot;repository&quot;: &quot;Banking_Project&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -168,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718215113578</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавлена функция сортировки">
+      <option name="closed" value="true" />
+      <created>1718278545752</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718278545752</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -177,6 +187,7 @@
     <MESSAGE value="Обновление после переименрования ветки master в main" />
     <MESSAGE value="Удалил часть кода примера pycharm" />
     <MESSAGE value="Добавлена def load_operations()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена def load_operations()" />
+    <MESSAGE value="Добавлена функция сортировки" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена функция сортировки" />
   </component>
 </project>

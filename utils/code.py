@@ -46,10 +46,15 @@ for dict in list_actions:
 
 print(i)
 
-sort_last_five(list_actions)
+listing = sort_last_five(list_actions)
 
 
+#for operation in listing:
+    #print(operation)
 
-list_five = sort_last_five(list_actions)
-for operation in list_five:
-    print(operation)
+
+# Повторная сортировка полученного списка по дате в убывающем порядке
+sorted_data = sorted(listing, key=lambda x: datetime.strptime(x['date'], '%Y-%m-%dT%H:%M:%S.%f'), reverse=True)
+
+for item in sorted_data:
+    print(item)
