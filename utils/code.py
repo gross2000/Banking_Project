@@ -10,7 +10,7 @@ def load_operations():
 
 
 def sort_last_five(operlist):
-    """вибираем пять последних операций"""
+    """виборка пяти последних операций"""
 
     def get_date(item):
         return item.get('date', '')
@@ -27,24 +27,7 @@ def sort_last_five(operlist):
 
 
 list_actions = load_operations()
-# print(list_actions)
-
-
-count = len(list_actions)
-
-print(count)
-
-i = 0
-for dict in list_actions:
-    for key in dict.keys():
-        if key == "date":
-            i += 1
-
-print(i)
-
 listing = sort_last_five(list_actions)
-
-
 # Повторная сортировка полученного списка по дате в убывающем порядке
 sorted_data = sorted(listing, key=lambda x: datetime.strptime(x['date'], '%Y-%m-%dT%H:%M:%S.%f'), reverse=True)
 
@@ -59,6 +42,46 @@ def date_reform(listing):
     return listing
 
 
-list_print = date_reform(sorted_data)
-for item in list_print:
-    print(item)
+def from_reform(listing):
+    # разделение счета 'from' пробелами и добавление звездочек"
+    for item in listing:
+        if 'from' in item:
+            s = item["from"]
+            # Находим индекс последнего пробела с конца
+            space_index = s.rfind(" ")
+            # Извлекаем правую часть после последнего пробела
+            right_part = s[space_index + 1:]
+            # Форматируем правую часть
+            input_str = " ".join([right_part[i:i + 4] for i in range(0, len(right_part), 4)])
+            output_str = ""
+            # Разбиваем строку на блоки
+            blocks = input_str.split()
+            blocks[-2] = "**" * (len(blocks[-2]) // 2)
+            blocks[-3] = blocks[-3][:-2] + "**"
+            output_str = " ".join(blocks)
+            # Соединяем части обратно
+            result = f"{s[:space_index]} {output_str}"
+            item["from"] = result
+    return listing
+
+
+def to_reform(listing):
+    # преобразовавние счета 'to'"
+    for item in listing:
+        if 'to' in item:
+            s = item["to"]
+            # Находим индекс последнего пробела с конца
+            space_index = s.rfind(" ")
+            # Извлекаем правую часть после последнего пробела
+            right_part = s[space_index + 1:]
+            # Получаем последние шесть символов
+            input_str = right_part[-6:]
+            output_str = "**" + input_str[1:]
+            result = f"{s[:space_index]} {output_str}"
+            item["to"] = result
+    return listing
+
+
+last_list = date_reform(sorted_data)
+last_list = from_reform(last_list)
+last_list = to_reform(last_list)

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc22fc63-f1a5-481b-b163-3c8e56e8ff58" name="Changes" comment="Установка пакетов и отражение в requirements.txt">
+    <list default="true" id="dc22fc63-f1a5-481b-b163-3c8e56e8ff58" name="Changes" comment="Добавление функции реформирования даты">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/code.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718289954789</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Добавление функции реформирования даты">
+      <option name="closed" value="true" />
+      <created>1718302567616</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718302567616</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -197,6 +206,7 @@
     <MESSAGE value="Добавлена def load_operations()" />
     <MESSAGE value="Добавлена функция сортировки" />
     <MESSAGE value="Установка пакетов и отражение в requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Установка пакетов и отражение в requirements.txt" />
+    <MESSAGE value="Добавление функции реформирования даты" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление функции реформирования даты" />
   </component>
 </project>

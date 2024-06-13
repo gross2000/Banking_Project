@@ -1,19 +1,9 @@
-from utils.code import load_operations
-from utils.code import sort_last_five
+from utils.code import last_list
 
 
-#def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    #print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-# if __name__ == '__main__':
-    #print_hi('PyCharm')
-
-
-
-
-
-
-
+for item in last_list:
+    print(f"{item['date']} {item['description']}")
+    if 'from' in item and 'to' in item:
+        print(f"{item['from']} -> {item['to']}")
+    print(f"{item['operationAmount']['amount']} {item['operationAmount']['currency'] ['name']}")
+    print()
