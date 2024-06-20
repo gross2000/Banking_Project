@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc22fc63-f1a5-481b-b163-3c8e56e8ff58" name="Changes" comment="Чистовой вариант без тестинга">
+    <list default="true" id="dc22fc63-f1a5-481b-b163-3c8e56e8ff58" name="Changes" comment="withtesting">
+      <change afterPath="$PROJECT_DIR$/tests/operations.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/operations.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/code.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,24 +81,28 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python tests.Python tests for test_code.test_date_reform.executor": "Run",
+    "Python tests.Python tests for test_code.test_from_reform.executor": "Run",
     "Python tests.Python tests for test_code.test_load_json.executor": "Run",
     "Python tests.Python tests for test_code.test_path_json.executor": "Run",
     "Python tests.Python tests for test_code.test_sort_last_five.executor": "Run",
+    "Python tests.Python tests for test_code.test_to_reform.executor": "Run",
+    "Python tests.Python tests in test_code.py.executor": "Run",
     "Python.code.executor": "Run",
     "Python.main.executor": "Run",
     "Python.test_code.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "develop",
-    "last_opened_file_path": "/home/cheandrey/PycharmProjects/Banking_Project/utils",
+    "last_opened_file_path": "/home/cheandrey/PycharmProjects/Banking_Project/tests",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python tests.Python tests for test_code.test_to_reform">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Banking_Project" />
       <option name="ENV_FILES" value="" />
@@ -133,6 +140,21 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_code.test_from_reform" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Banking_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_code.test_from_reform&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for test_code.test_load_json" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Banking_Project" />
       <option name="ENV_FILES" value="" />
@@ -145,21 +167,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_code.test_load_json&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_code.test_path_json" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Banking_Project" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_code.test_path_json&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -178,12 +185,28 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_code.test_to_reform" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Banking_Project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_code.test_to_reform&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_code.test_to_reform" />
+        <item itemvalue="Python tests.Python tests for test_code.test_from_reform" />
         <item itemvalue="Python tests.Python tests for test_code.test_date_reform" />
         <item itemvalue="Python tests.Python tests for test_code.test_sort_last_five" />
         <item itemvalue="Python tests.Python tests for test_code.test_load_json" />
-        <item itemvalue="Python tests.Python tests for test_code.test_path_json" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718321575735</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="withtesting">
+      <option name="closed" value="true" />
+      <created>1718356193706</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718356193706</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -288,6 +319,7 @@
     <MESSAGE value="Установка пакетов и отражение в requirements.txt" />
     <MESSAGE value="Добавление функции реформирования даты" />
     <MESSAGE value="Чистовой вариант без тестинга" />
-    <option name="LAST_COMMIT_MESSAGE" value="Чистовой вариант без тестинга" />
+    <MESSAGE value="withtesting" />
+    <option name="LAST_COMMIT_MESSAGE" value="withtesting" />
   </component>
 </project>
