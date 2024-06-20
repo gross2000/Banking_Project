@@ -1,10 +1,14 @@
 import json
+import os
 from datetime import datetime
 
 
 def load_operations():
     """Загружает список операций клиента из файла .json"""
-    with open("/home/cheandrey/PycharmProjects/Banking_Project/operations.json", 'r') as file:
+    # абсолютный путь /home/cheandrey/PycharmProjects/Banking_Project/operations.json
+    filename = "operations.json"
+    path = os.path.join(filename)
+    with open(path, 'r') as file:
         data = json.load(file)
         return data
 
@@ -13,6 +17,7 @@ def sort_last_five(operlist):
     """виборка пяти последних операций"""
 
     def get_date(item):
+        """проверка наличия данных по ключу date в словаре"""
         return item.get('date', '')
 
     def validate_date(date_str):

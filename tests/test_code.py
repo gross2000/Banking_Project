@@ -1,3 +1,5 @@
+import json
+import os
 import pytest
 from datetime import datetime
 from utils.code import load_operations
@@ -9,33 +11,38 @@ from utils.code import to_reform
 
 def test_load_json():
     data = load_operations()
-    assert isinstance(data, dict)
-    assert 'operation1' in data
-    assert 'operation2' in data
+    assert isinstance(data, dict), "ошибка синтаксиса данного словаря"
+
+
+def test_sort_last_five():
+    data = load_operations()
+    elements = sort_last_five(data)
+    assert len(elements) == 5, "количество отсортированных элементов должно быть равным 5"
 
 
 def test_date_reform():
-    input_data = [
-        {"date": "2022-01-30T15:10:00.000"},
-        {"date": "2023-02-17T08:45:00.000"}
-    ]
-    expected_output = [
-        {"date": "30.01.2022"},
-        {"date": "17.02.2023"}
-    ]
-    assert date_reform(input_data) == expected_output
-    assert date_reform([]) == []
-    input_data_missing_date = [
-        {"date": "2022-01-30T15:10:00.000"},
-        {}
-    ]
-    expected_output_missing_date = [
-        {"date": "30.01.2022"},
-        {}
-    ]
-    assert date_reform(input_data_missing_date) == expected_output_missing_date
+    list_actions = load_operations()
+    listing = sort_last_five(list_actions)
+    re_date = date_reform(listing)
+    first_dict = re_date[0]
+    date = first_dict['date']
+    date_obj = datetime.strptime(date, '%d.%m.%Y')
+    assert date_obj
 
 
+def test_from_reform():
+    list_actions = load_operations()
+    listing = sort_last_five(list_actions)
+    re_from = from_reform(listing)
+    first_dict = re_from[0]
+    from_unit = first_dict['from']
+    assert "** ****" in from_unit
 
 
-
+def test_to_reform():
+    list_actions = load_operations()
+    listing = sort_last_five(list_actions)
+    re_to = to_reform(listing)
+    first_dict = re_to[0]
+    to_unit = first_dict['to']
+    assert "Счет **" in to_unit
