@@ -13,6 +13,20 @@ def load_operations():
         return data
 
 
+def execute_sort(listing):
+    # отсортированные executed-транзакции"
+    new_list = []
+    for item in listing:
+        if "state" in item:
+            if item["state"] == "EXECUTED":
+                new_list.append(item)
+    return new_list
+
+
+list_actions = load_operations()
+new_lising = execute_sort(list_actions)
+
+
 def sort_last_five(operlist):
     """виборка пяти последних операций"""
 
@@ -31,8 +45,7 @@ def sort_last_five(operlist):
     return sorted_operations[:5]
 
 
-list_actions = load_operations()
-listing = sort_last_five(list_actions)
+listing = sort_last_five(new_lising)
 # Повторная сортировка полученного списка по дате в убывающем порядке
 sorted_data = sorted(listing, key=lambda x: datetime.strptime(x['date'], '%Y-%m-%dT%H:%M:%S.%f'), reverse=True)
 
@@ -87,6 +100,10 @@ def to_reform(listing):
     return listing
 
 
+
 last_list = date_reform(sorted_data)
 last_list = from_reform(last_list)
 last_list = to_reform(last_list)
+
+
+
