@@ -42,13 +42,13 @@ def sort_last_five(operlist):
             return False
 
     sorted_operations = sorted(operlist, key=lambda x: validate_date(get_date(x)), reverse=True)
-    return sorted_operations[:5]
+    return sorted_operations
+
 
 
 listing = sort_last_five(new_lising)
 # Повторная сортировка полученного списка по дате в убывающем порядке
 sorted_data = sorted(listing, key=lambda x: datetime.strptime(x['date'], '%Y-%m-%dT%H:%M:%S.%f'), reverse=True)
-
 
 def date_reform(listing):
     # преобразование даты в формат "21.01.2018"
@@ -101,9 +101,6 @@ def to_reform(listing):
 
 
 
-last_list = date_reform(sorted_data)
+last_list = date_reform(sorted_data[:5])
 last_list = from_reform(last_list)
 last_list = to_reform(last_list)
-
-
-
