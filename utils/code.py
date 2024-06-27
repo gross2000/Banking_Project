@@ -74,6 +74,8 @@ def from_reform(listing):
             output_str = ""
             # Разбиваем строку на блоки
             blocks = input_str.split()
+            if "Счет" in item["from"]:
+                del blocks[2]
             blocks[-2] = "**" * (len(blocks[-2]) // 2)
             blocks[-3] = blocks[-3][:-2] + "**"
             output_str = " ".join(blocks)
