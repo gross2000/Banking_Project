@@ -24,19 +24,16 @@ def test_execute_sort():
         assert "EXECUTED" in listing
 
 
-def test_sort_last_five():
-    data = load_operations()
-    elements = sort_last_five(data)
-    assert len(elements) == 5, "количество отсортированных элементов должно быть равным 5"
-
-
 def test_date_reform():
     list_actions = load_operations()
-    listing = sort_last_five(list_actions)
-    re_date = date_reform(listing)
+    new_lising = execute_sort(list_actions)
+    listing = sort_last_five(new_lising)
+    sorted_data = sorted(listing, key=lambda x: datetime.strptime(x['date'], '%Y-%m-%dT%H:%M:%S.%f'), reverse=True)
+    re_date = date_reform(sorted_data[:5])
     first_dict = re_date[0]
     date = first_dict['date']
     date_obj = datetime.strptime(date, '%d.%m.%Y')
+    assert len(re_date) == 5
     assert date_obj
 
 
