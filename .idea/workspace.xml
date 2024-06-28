@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc22fc63-f1a5-481b-b163-3c8e56e8ff58" name="Changes" comment="Доработка по замечаниям от 27.06.24">
+    <list default="true" id="dc22fc63-f1a5-481b-b163-3c8e56e8ff58" name="Changes" comment="Доработка по замечаниям от 27.06.24 c учетом сокрытия счетов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/code.py" afterDir="false" />
     </list>
@@ -336,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719503200537</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Доработка по замечаниям от 27.06.24 c учетом сокрытия счетов">
+      <option name="closed" value="true" />
+      <created>1719525430996</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1719525430996</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -354,6 +362,7 @@
     <MESSAGE value="Доработка с сортировкой по ECECUTED" />
     <MESSAGE value="Доработка c правильной сортировкой последних пяти транзакций" />
     <MESSAGE value="Доработка по замечаниям от 27.06.24" />
-    <option name="LAST_COMMIT_MESSAGE" value="Доработка по замечаниям от 27.06.24" />
+    <MESSAGE value="Доработка по замечаниям от 27.06.24 c учетом сокрытия счетов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Доработка по замечаниям от 27.06.24 c учетом сокрытия счетов" />
   </component>
 </project>
