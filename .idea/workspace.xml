@@ -364,7 +364,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719683024753</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="with_gitignore">
+      <option name="closed" value="true" />
+      <created>1719684718945</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1719684718945</updated>
+    </task>
+    <task id="LOCAL-00019" summary="with_gitignore">
+      <option name="closed" value="true" />
+      <created>1719684730466</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1719684730466</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
